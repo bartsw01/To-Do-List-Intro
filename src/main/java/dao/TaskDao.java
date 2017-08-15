@@ -14,12 +14,12 @@ public interface TaskDao {
     void add (Task task);
     //read
     List<Task> getAll();
-
+    //find by Id
     Task findById(int id);
     //update
-    //  void update(int id, String content);
+    void update(int id, String content);
     //delete
-//   void deleteTask();
+   void deleteById(int id);
 
-//   void clearAllTasks();
+   void clearAllTasks();
 }
